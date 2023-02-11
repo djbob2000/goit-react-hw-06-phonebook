@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { nanoid } from 'nanoid';
+import React from 'react';
 import css from './App.module.css';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
@@ -36,8 +35,7 @@ const App = () => {
         <ContactForm></ContactForm>
         <Filter />
         <h2>Contacts:</h2>
-        <ContactList
-             />
+        <ContactList />
       </div>
     </>
   );
