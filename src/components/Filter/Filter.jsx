@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterContactsToStore } from 'redux/contacts/contacts.slice';
@@ -28,11 +27,6 @@ const Filter = () => {
       </label>
     </div>
   );
-};
-
-Filter.propTypes = {
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
 };
 
 export default Filter;
